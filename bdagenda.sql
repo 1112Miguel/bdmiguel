@@ -8,10 +8,11 @@ CREATE TABLE agenda
   apellido                   VARCHAR(45) NOT NULL,
   direccion                  VARCHAR(45),
   telefijo                   VARCHAR(9),
-  telefmovi                  VARCHAR(9),
+  telefmovi                  VARCHAR(12),
   email                      VARCHAR(30),
   fbc                        VARCHAR(30),
-  CONSTRAINT agenda_codigoper_pk PRIMARY KEY (codigoper));
+  CONSTRAINT agenda_codigoper_pk PRIMARY KEY (codigoper)
+ );
 
 INSERT INTO agenda VALUES ('1', 'carlos', 'serna','av. palmeras 145',
 '043524875', '942587568','carlos@hotmail.com', 'carlos serna');
@@ -32,5 +33,5 @@ INSERT INTO agenda VALUES ('8', 'angela', 'suarez','av.pardo 1894',
 INSERT INTO agenda VALUES ('9', 'antonhy', 'orbegozo','av.palmeras 456',
 '043151919', '942321212','antonhyelgozo@hotmail.com', 'antonhy orbegozo');
 INSERT INTO agenda VALUES ('10', 'giancarlo', 'sarrin','av.huaraz 123',
-'043411742', '974410547','giancarlosarrines@hotmail.com', 'giancarlo sarrin');
+'043411742', '9744105472','giancarlosarrines@hotmail.com', 'giancarlo sarrin');
 COMMIT;
